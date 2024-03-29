@@ -1,10 +1,14 @@
 .home-container {
+  position: absolute;
   width: 100%;
+ 
   display: flex;
-  /*min-height: 100vh;*/
-  align-items: center;
+  top: 0;
+  min-height: 130vh;
   flex-direction: column;
-  background-color: #151515;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 .login-container {
   /* width: 100%;*/
@@ -28,6 +32,9 @@
   justify-content: space-between;
   position: relative;
   padding: var(--dl-space-space-twounits) var(--dl-space-space-threeunits);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .wallet-btn{
@@ -36,6 +43,11 @@
   text-overflow: ellipsis; /* Show an ellipsis (...) for truncated text */
   max-width: 200px;    /* Adjust the maximum width as needed */
   text-align: left; 
+  background-color: #3498db;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#799bef 0 -3px 0 inset;
+  transition: box-shadow .15s,transform .15s;
 }
 
 /* If you want to set a background color for the navbar */
@@ -45,6 +57,8 @@
   color: white; /* Adjust text color based on your design */
 }
 
+
+
 .home-logo {
   color: #e0e0e0;
   font-size: 32px;
@@ -53,7 +67,7 @@
   transition: transform 0.2s;
 }
 .home-logo:hover{
-  transform: rotate(30deg) scale(1.2);
+  transform: scale(1.2);
 }
 .home-desktop-menu {
   display: flex;
@@ -74,10 +88,12 @@
 }
 .home-button2 {
   color: rgb(255, 255, 255);
-  transition: transform 0.2s;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .home-button2:hover{
-  transform: rotate(30deg) scale(1.2);
+  color: #e2caff;
+  transform: scale(1.2);
+  text-shadow: none;
 }
 .home-button3 {
   color: rgb(255, 255, 255);
@@ -127,7 +143,7 @@
   position: fixed;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #000;
 }
 .home-nav1 {
   display: flex;
@@ -224,7 +240,7 @@
   flex-direction: column;
 }
 .home-header {
-  color: #a9bbfd;
+  color: #9ef0fe;
   font-size: 75px;
   /* font-family: "Clepto Regular"; */
   max-width: 1000px;
@@ -251,6 +267,7 @@
   /* Add more src lines if you have different font formats (e.g., woff, woff2) */
 }
 .verifai {
+  -webkit-text-stroke: 2px #9ef0fe ;
   font-family: 'detacher', sans-serif; /* Apply the font-family here */
   padding-top: 20px;
   
@@ -265,7 +282,25 @@
   animation: typing 2s steps(5)forwards,
         cursor .2s step-end forwards;
 }
+.main {
+  width: 100%;
+  height: 100vh;
+}
 
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.4);
+}
 .home-caption {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -1717,17 +1752,26 @@
   margin-top: var(--dl-space-space-oneandhalfunits);
 }
 .home-footer {
-  gap: var(--dl-space-space-threeunits);
+  background-color: #03080f;
+  width: 100vw; /* Set width to 100% of viewport width */
+  padding: 120px var(--dl-space-space-fiveunits); /* Adjust padding as needed */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  
+  /* gap: var(--dl-space-space-threeunits);
   width: 100%;
+  background-color: #000;
   display: flex;
   position: relative;
-  max-width: 1440px;
+  
+  
   align-items: flex-start;
   padding-top: 120px;
   padding-left: var(--dl-space-space-fiveunits);
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-threeunits); */
 }
 .home-main5 {
   width: 100%;

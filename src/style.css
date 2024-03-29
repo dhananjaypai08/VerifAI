@@ -55,9 +55,7 @@
   background-color: #00ffbd;
 }
 
-.button:hover {
-  opacity: 0.5;
-}
+
 
 .input,
 .textarea {
@@ -153,7 +151,9 @@
   color: white;
   border-color: white;
 }
-
+.home-logo:hover{
+  transform: scale(1.2);
+}
 .Heading {
   font-size: 32px;
   font-family: Inter;
