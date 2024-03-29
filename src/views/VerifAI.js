@@ -15,7 +15,7 @@ import lighthouse from '@lighthouse-web3/sdk';
 // const authorization = "Basic " + btoa(projectId + ":" + projectSecretKey);
 const apiKey = process.env.REACT_APP_LIGHTHOUSE_API_KEY;
 
-const Autocrate = () => {
+const VerifAI = () => {
     const { state, setState } = useAppContext() 
     const { provider, signer, contract, account, authenticated } = state;
     const [file, setFile] = useState();
@@ -328,7 +328,7 @@ const Autocrate = () => {
                 <div className="home-main1">
                   <div className="home-content02">
                     <h2 className="home-header02">
-                      Autocrate: Blockchain based document verification and storage system
+                      VerifAI 
                     </h2>
                     <p className="home-description03">
                       ensuring the authenticity and uniqueness of certificates,
@@ -501,4 +501,4 @@ const Autocrate = () => {
     </div>
     )
 }
-export default Autocrate;
+export default VerifAI;
