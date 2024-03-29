@@ -4,7 +4,7 @@ import Script from "dangerous-html/react";
 import { Helmet } from "react-helmet";
 import { useState, useEffect } from "react";
 import { Redirect } from 'react-router-dom'
-import abi from "../contracts/VerifAI.json";
+import abi from "../contracts/Autocrate.json";
 //import './App.css';
 import { ethers } from "ethers";
 import axios from "axios";
@@ -46,7 +46,7 @@ const Home = (props) => {
   }
   
   const connectWallet = async () => {
-    const contractAddress = "0xBFf990A4A3C985ABdB1F7d015Db715fa1d207555"//"0x8264a7B7d02ab5eF1e57d0ad10110686D79d8d46"//"0x681a204B065604B2b2611D0916Dca94b992f0B41"//"0x816df2a69bB2D246B1ee5a4F2d1B3EbcB3aF7C85";//"0x61eFE56495356973B350508f793A50B7529FF978"
+    const contractAddress = "0x8264a7B7d02ab5eF1e57d0ad10110686D79d8d46"//"0x681a204B065604B2b2611D0916Dca94b992f0B41"//"0x816df2a69bB2D246B1ee5a4F2d1B3EbcB3aF7C85";//"0x61eFE56495356973B350508f793A50B7529FF978"
     const contractAbi = abi.abi;
     try {
       const { ethereum } = window;
@@ -267,8 +267,8 @@ const Home = (props) => {
       }
       </ul>}
       
-      {isConnected && <><label className='mint-btn'>Total DeCAT's Minting Volume: {totalmints}
-      </label> <label className='mint-btn'>Total DeCAT's Shared Volume: {total_endorsements}</label><br></br></>}
+      {/* {isConnected && <><label className='mint-btn'>Total DeCAT's Minting Volume: {totalmints}
+      </label> <label className='mint-btn'>Total DeCAT's Shared Volume: {total_endorsements}</label><br></br></>} */}
       {isConnected && admin && <Loginsystem></Loginsystem>}
       <section className="home-hero">
       
@@ -279,19 +279,13 @@ const Home = (props) => {
           Where Blockchain Meets AI to Protect and Validate Content Creators' Intellectual Property.
           </p>
         </div>}
-        <div className="home-buttons">
-          {/* <button onClick={checkConnectionBeforeConnecting} className="button">
-            {connectmsg}
-          </button> */}
-          
-        </div>
       </section>
       <section className="home-description">
-      {isConnected && <div className="home-container">
-      <p className="caption">
+        {isConnected && <div className="home-container">
+        <p className="caption">
           Your DeCAT Profile:
-      </p>
-      <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
+        </p>
+        <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
         <label className='home-button7 button'>DeCAT SBT's minted to your account
         </label>
         <ul>{fetched_nftdata && 
@@ -307,9 +301,9 @@ const Home = (props) => {
           </>
         ))}
         </ul>
-    </div>}
+        </div>}
     
-    {isConnected && <div className="home-container">
+    {isConnected && <div className="home1-container">
       <label className='home-button7 button'>DeCAT SBT's shared to your account
       </label>
         <ul>{fetched_nftdata && 
@@ -327,9 +321,11 @@ const Home = (props) => {
         </ul>
     </div>}
         
-        
-      </section>
+       </section>
       
+               
+        
+    
 
       <footer className="home-footer">
         <div className="home-main5">
