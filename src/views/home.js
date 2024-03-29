@@ -246,7 +246,6 @@ const Home = (props) => {
           </div>
         </div>
       </header>
-      <button className='home-button6 button' onClick={() => Verify()}>Verify Credentials/Proofs</button>
     {verified!==undefined && <ul className="home-cards">
       {verified==true &&
       <div className="home-card">
@@ -270,9 +269,10 @@ const Home = (props) => {
       <section className="home-hero">
       
       {!isConnected && <div className="home-heading">
-          <h1 className="home-header">Store. Share. Succeed</h1>
+          <h1 className="home-header">Welcome to <br></br>
+           <span class="typing-text"><span class="verifai">VerifAI</span></span></h1>
           <p className="home-caption">
-          Decentralized Identity Verification and storage system.
+          Where Blockchain Meets AI to Protect and Validate Content Creators' Intellectual Property.
           </p>
         </div>}
         <div className="home-buttons">
@@ -322,11 +322,7 @@ const Home = (props) => {
         ))}
         </ul>
     </div>}
-        <img
-          alt="image"
-          src="/hero-divider-1500w.png"
-          className="home-divider-image"
-        />
+        
         
       </section>
       {!isConnected && <section className="home-cards">
@@ -338,14 +334,7 @@ const Home = (props) => {
                 <h2 className="home-header01">
                   70% of the Certificates are web2 based or paper based
                 </h2>
-                <p className="home-description02">
-                  The project aims to tackle the problem of secure credential
-                  verification using SoulBound NFTs in a decentralized manner.
-                  By creating a Dapp with features for issuers to mint, manage,
-                  and verify NFTs, we intend to revolutionize how certificates
-                  and achievements are showcased and verified, enhancing their
-                  value and authenticity in the digital world.
-                </p>
+                
               </div>
             </div>
           </div>
@@ -356,14 +345,7 @@ const Home = (props) => {
                 <h2 className="home-header02">
                   DeCAT: Decentralized Identity verification and storage system
                 </h2>
-                <p className="home-description03">
-                  Ensuring the authenticity and uniqueness of certificates,
-                  achievements, and credentials has become a critical concern.
-                  Traditional methods are susceptible to duplication and
-                  tampering, diminishing the value of these accolades. To
-                  address this issue, we aim to create a Dapp that leverages 
-                  modified ERC721 tokens inspired by SoulBound Tokens.
-                </p>
+      
               </div>
               
             </div>
@@ -379,7 +361,7 @@ const Home = (props) => {
             <div className="home-heading10">
               <h2 className="home-logo2">ZKBuilders</h2>
               <p className="home-caption17">
-              Empower your professional journey with Autocrate. Join us in creating a job market where trust is inherent, and your identity is truly yours. Let's build a decentralized future together.
+              Empower your professional journey with VerifAI.  Let's build a decentralized future together.
               </p>
             </div>
             <div className="home-socials1">

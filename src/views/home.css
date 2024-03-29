@@ -219,12 +219,12 @@
 }
 .home-heading {
   gap: var(--dl-space-space-twounits);
-  display: flex;
+  display: inline-block;
   align-items: center;
   flex-direction: column;
 }
 .home-header {
-  color: #FFCF77;
+  color: #a9bbfd;
   font-size: 75px;
   /* font-family: "Clepto Regular"; */
   max-width: 1000px;
@@ -233,7 +233,39 @@
   font-weight: 800;
   line-height: 98px;
   padding-top: 40px;
+  padding-bottom: 20px;
+  
+  
 }
+@keyframes cursor {
+  50%{border-color: transparent}
+}
+@keyframes typing {
+  from { width: 0 }
+}
+
+@font-face {
+  font-family: 'detacher';
+  src: url('font/Detacher_Regular.ttf') format('truetype');
+  src: url('font/Detacher_Regular.otf') format('truetype');
+  /* Add more src lines if you have different font formats (e.g., woff, woff2) */
+}
+.verifai {
+  font-family: 'detacher', sans-serif; /* Apply the font-family here */
+  padding-top: 20px;
+  
+}
+.typing-text {
+  display: inline-block;
+  width: 0;
+  border-right: 5px solid;
+  width: 43%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(5)forwards,
+        cursor .2s step-end forwards;
+}
+
 .home-caption {
   color: rgb(255, 255, 255);
   font-size: 24px;
