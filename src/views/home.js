@@ -9,6 +9,7 @@ import abi from "../contracts/VerifAI.json";
 import { ethers } from "ethers";
 import axios from "axios";
 
+import your_video from '../assets/your_video.mp4'
 import "./home.css";
 import Loginsystem from "./login";
 import Share from "./Share";
@@ -155,8 +156,11 @@ const Home = (props) => {
   }
 
   return (
-    <div className="home-container">
-      <Helmet>
+    <div className="main">
+      <div className="overlay"></div>
+      <video src={your_video} autoPlay loop muted/>
+      <div className="home-container">
+       <Helmet>
         <title>Home</title>
         <meta property="og:title" content="Dashboard" />
         <link href="https://db.onlinewebfonts.com/c/974bd878107a4b17fbb34db4029679e9?family=Clepto+Regular" rel="stylesheet"></link>
@@ -325,35 +329,7 @@ const Home = (props) => {
         
         
       </section>
-      {!isConnected && <section className="home-cards">
-        <div className="home-row">
-          <div className="home-card">
-            
-            <div className="home-main">
-              <div className="home-content01">
-                <h2 className="home-header01">
-                  70% of the Certificates are web2 based or paper based
-                </h2>
-                
-              </div>
-            </div>
-          </div>
-          <div className="home-card01">
-            
-            <div className="home-main1">
-              <div className="home-content02">
-                <h2 className="home-header02">
-                  DeCAT: Decentralized Identity verification and storage system
-                </h2>
       
-              </div>
-              
-            </div>
-          </div>
-        </div>
-               
-        
-      </section>}
 
       <footer className="home-footer">
         <div className="home-main5">
@@ -466,6 +442,7 @@ const Home = (props) => {
           
         </Script>
       </div>
+    </div>
     </div>
   );
 };
