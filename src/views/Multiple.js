@@ -27,6 +27,7 @@ const Multiple = () => {
     const [addressArray, setAddressArray] = useState([]);
     const [nameArray, setNameArray] = useState([]);
     const [descriptionArray, setDescriptionArray] = useState([]);
+    const [domainArray, setDomainArray] = useState([]);
     const [isConnected, setConnection] = useState(false);
     const [connectmsg, setMsg] = useState("Connect Wallet");
     
@@ -51,17 +52,20 @@ const Multiple = () => {
                 const addresses = data.map((row) => row.address);
                 const names = data.map((row) => row.name);
                 const descriptions = data.map((row) => row.description);
+                const domains = data.map((row) => row.domain);
                 let i = 0;
                 while(i<names.length){
                   if(names[i] == undefined){
                     names.splice(i, 1);
                     descriptions.splice(i, 1);
                     addresses.splice(i, 1);
+                    domains.splice(i,1);
                   } else{ i++; }
                 }
                 setAddressArray(addresses);
                 setNameArray(names);
                 setDescriptionArray(descriptions);
+                setDomainArray(domains);
                 console.log(addresses, names, descriptions);
             },
             error: (error) => {
@@ -84,7 +88,7 @@ const Multiple = () => {
         console.log(resp)
     } 
     const connectWallet = async () => {
-      const contractAddress = "0x8264a7B7d02ab5eF1e57d0ad10110686D79d8d46"//"0x816df2a69bB2D246B1ee5a4F2d1B3EbcB3aF7C85";//"0x61eFE56495356973B350508f793A50B7529FF978";
+      const contractAddress = "0xBFf990A4A3C985ABdB1F7d015Db715fa1d207555"//"0x8264a7B7d02ab5eF1e57d0ad10110686D79d8d46"//"0x816df2a69bB2D246B1ee5a4F2d1B3EbcB3aF7C85";//"0x61eFE56495356973B350508f793A50B7529FF978";
       const contractAbi = abi.abi;
       try {
         const { ethereum } = window;
@@ -153,7 +157,8 @@ const Multiple = () => {
           const updatedJSON = `{
             "name": "${nameArray[i]}",
             "description": "${descriptionArray[i]}",
-            "image": "${image_uri}"
+            "image": "${image_uri}",
+            "domain": "${domainArray[i]}"
           }`
           console.log(updatedJSON);
           // const ans = await ipfs.add(updatedJSON);
@@ -164,7 +169,7 @@ const Multiple = () => {
         console.log(addressArray, tokenuris);
         const contractwithsigner = contract.connect(signer);
         console.log('connected with contract');
-        const resp = await contractwithsigner.mintBatch(addressArray, nameArray, descriptionArray, result.data.Hash, tokenuris);
+        const resp = await contractwithsigner.mintBatch(addressArray, nameArray, descriptionArray, result.data.Hash, tokenuris, domainArray);
         console.log(resp);
         setLoader(true);
         event.target.reset();

@@ -528,9 +528,9 @@
 					"type": "string[]"
 				},
 				{
-					"internalType": "string",
+					"internalType": "string[]",
 					"name": "domain",
-					"type": "string"
+					"type": "string[]"
 				}
 			],
 			"name": "mintBatch",

@@ -42,7 +42,7 @@ const ReputationSystem = (props) => {
   }
 
   const connectWallet = async () => {
-    const contractAddress = "0x8264a7B7d02ab5eF1e57d0ad10110686D79d8d46"//"0x681a204B065604B2b2611D0916Dca94b992f0B41";//"0x61eFE56495356973B350508f793A50B7529FF978";
+    const contractAddress = "0xBFf990A4A3C985ABdB1F7d015Db715fa1d207555"//"0x8264a7B7d02ab5eF1e57d0ad10110686D79d8d46"//"0x681a204B065604B2b2611D0916Dca94b992f0B41";//"0x61eFE56495356973B350508f793A50B7529FF978";
     const contractAbi = abi.abi;
     try {
       const { ethereum } = window;
