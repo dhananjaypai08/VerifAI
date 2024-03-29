@@ -3,7 +3,7 @@ import React from "react";
 import Script from "dangerous-html/react";
 import { Helmet } from "react-helmet";
 import { useState, useEffect } from "react";
-import abi from "../contracts/Autocrate.json";
+import abi from "../contracts/VerifAI.json";
 //import './App.css';
 import { ethers } from "ethers";
 import axios from "axios";
@@ -118,7 +118,7 @@ const ReputationSystem = (props) => {
       </Helmet>
       <header data-thq="thq-navbar" className="home-navbar">
         <span className="home-logo"><a  href="/">
-              DeCAT
+              VerifAI
             </a></span>
         <div
           data-thq="thq-navbar-nav"

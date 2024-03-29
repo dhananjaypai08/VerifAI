@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const dcat = await hre.ethers.getContractFactory("DeCAT");
+  const dcat = await hre.ethers.getContractFactory("VerifAI");
   const contract = await dcat.deploy(); //instance of contract
 
   await contract.deployed();

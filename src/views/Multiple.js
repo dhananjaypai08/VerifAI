@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 import { useAppContext } from '../AppContext';
 // import { create as ipfsHttpClient } from "ipfs-http-client";
 import Papa from 'papaparse';
-import abi from "../contracts/Autocrate.json";
+import abi from "../contracts/VerifAI.json";
 import lighthouse from '@lighthouse-web3/sdk';
 
 const projectId = '2WCbZ8YpmuPxUtM6PzbFOfY5k4B';

@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Redirect } from 'react-router-dom'
-import abi from "../contracts/Autocrate.json";
+import abi from "../contracts/VerifAI.json";
 //import './App.css';
 import { ethers } from "ethers";
 
