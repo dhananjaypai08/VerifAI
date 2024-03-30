@@ -188,9 +188,9 @@ const Multiple = () => {
         
         call()
     }
-    return (<div>
+    return (
 
-    <div>
+     
         <div className="home-container" style={{ backgroundColor: '#282727' }}>
           
           <Helmet>
@@ -211,14 +211,17 @@ const Multiple = () => {
                 data-role="Nav"
                 className="home-nav"
               >
-                <a  href="/" className="home-button1 button-clean button">
-              Home
-            </a>
-            <a href="/multiple" className="home-button2 button-clean button">
+                <a  href="/multiple" className="home-button1 button-clean button">
               Multiple Transaction
             </a>
             <a href="/portfolio" className="home-button2 button-clean button">
-                    Portfolio
+              Portfolio 
+            </a>
+            <a href="/reputation" className="home-button2 button-clean button">
+                    Reputation
+                  </a>
+                  <a href="/jobsavailable" className="home-button2 button-clean button">
+                    Jobs Demnad Index
                   </a>
               </nav>
             </div>
@@ -294,7 +297,7 @@ const Multiple = () => {
     {authorized == 1 && 
     // <div data-thq="thq-close-menu" className="home-caption01">Wohooo!! You are Logged In
     // </div> && 
-    <div data-thq="thq-close-menu" className="home-caption01">LoggedIn successully
+    <div data-thq="thq-close-menu" className="home-caption01" >LoggedIn successully
     </div>
     }
 
@@ -356,7 +359,7 @@ const Multiple = () => {
             <div className="home-heading10">
               <h2 className="home-logo2">ZKBuilders</h2>
               <p className="home-caption17">
-              Empower your professional journey with Autocrate. Join us in creating a job market where trust is inherent, and your identity is truly yours. Let's build a decentralized future together.
+              Empower your professional journey with VerifAI.  Let's build a decentralized future together.
               </p>
             </div>
             <div className="home-socials1">
@@ -453,13 +456,11 @@ const Multiple = () => {
           </div>
         </div>
         <span className="home-copyright">
-          © 2023 Character. All Rights Reserved.
+          © 2024 VerifAI. All Rights Reserved.
         </span>
       </footer>
         </div>
-      ;</div>
-      
-    </div>
+    
     )
 }
 export default Multiple;

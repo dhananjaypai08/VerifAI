@@ -159,6 +159,7 @@ const Home = (props) => {
       <div className="overlay"></div>
       <video src={your_video} autoPlay loop muted/>
       <div className="home-container">
+
        <Helmet>
         <title>Home</title>
         <meta property="og:title" content="Dashboard" />
@@ -249,6 +250,28 @@ const Home = (props) => {
           </div>
         </div>
       </header>
+
+      {isConnected && <div className="home-heading">
+        <p className="home-header1">
+          Your DeCAT Profile:
+        </p>
+        <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
+        <label className='home-button7 button'>DeCAT SBT's minted to your account
+        </label>
+        <ul>{fetched_nftdata && 
+        nft_data.map((nft, index) => (
+        <>
+          <div className="home-card" style={{width: 700}} key={index}>
+          <li className="home-paragraph">{nft.name}: <br></br>{nft.description}
+          <img src={nft.image} className="home-image06" ></img>
+          </li>
+          {ipfs_hash !== get_nft_cids[index] && <button className='home-button6 button' onClick={() => handleButtonClick(index)}>Share</button>}
+          {ipfs_hash == get_nft_cids[index] && <Share passedValue={ipfs_hash} data={selectedData}></Share>}
+          </div>
+          </>
+        ))}
+        </ul>
+        </div>}
     {verified!==undefined && <ul className="home-cards">
       {verified==true &&
       <div className="home-card">
@@ -280,7 +303,7 @@ const Home = (props) => {
         </div>}
       </section>
       <section className="home-container">
-        {isConnected && <div className="home-description">
+        {/* {isConnected && <div className="home-description">
         <p className="caption">
           Your DeCAT Profile:
         </p>
@@ -300,7 +323,7 @@ const Home = (props) => {
           </>
         ))}
         </ul>
-        </div>}
+        </div>} */}
     
     {isConnected && <div className="home1-container">
       <label className='home-button7 button'>DeCAT SBT's shared to your account

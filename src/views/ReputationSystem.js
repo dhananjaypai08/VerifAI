@@ -203,7 +203,7 @@ const ReputationSystem = (props) => {
         <h1 className="home-header">Please connect Wallet.</h1>
         </div>}
       </section>
-      {isConnected && <label  className='mint-btn button'>Total DeCAT's Volume: {totalmints}
+      {isConnected && <label  className='mint-btn button'>Total VerifAI's Volume: {totalmints}
       </label>}
       {isConnected && <label className='home-button7 button'>Total SBT's shared to your Account: {curr_endorsements_received} <br></br>
       Total SBT's shared by you: {curr_endorsements_given} <br></br>
