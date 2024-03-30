@@ -41,7 +41,7 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: 20px;
-  box-shadow: 5px 6px 0px 0px #000000;
+  box-shadow: 5px 6px 0px 0px #056be0;
   font-style: normal;
   transition: 0.3s;
   font-weight: 500;
@@ -52,7 +52,7 @@
   border-radius: 0px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
-  background-color: #00ffbd;
+  background-color: #cbf6ff;
 }
 
 
