@@ -274,7 +274,7 @@ const Portfolio = () => {
         )}
       </form>
 
-     {/* <section className="home-hero">
+     <section className="home-hero">
 
      <div className="home-container">
     {CIflag &&
@@ -285,7 +285,7 @@ const Portfolio = () => {
           <br></br>
           </div>
         </ul>}
-    {/* <label className='home-button7 button'>DeCAT SBT's minted to your account
+    <label className='home-button7 button'>DeCAT SBT's minted to your account
     </label> 
         <ul className="flex-container">{fetched_nftdata && 
         nft_data.map((nft, index) => (
@@ -304,7 +304,7 @@ const Portfolio = () => {
     </div> 
 
     <div className="home-container">
-    {/* <label className='home-button7 button'>DeCAT SBT's shared to your account
+     <label className='home-button7 button'>DeCAT SBT's shared to your account
       </label> 
         <ul className="flex-container">{fetched_nftdata && 
         endorsed_mints.map((nft,index) => (
@@ -322,14 +322,14 @@ const Portfolio = () => {
     </div>
 
       </section>
-      {/* <section className="home-description">
+       <section className="home-description">
         <img
           alt="image"
           src="/hero-divider-1500w.png"
           className="home-divider-image"
         />
         
-      </section> */}
+      </section>
       </div>
       
       <footer className="home-footer">
