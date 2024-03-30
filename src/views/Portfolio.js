@@ -281,15 +281,24 @@ const Portfolio = () => {
      <div>
     {CIflag &&
     <ul className="flex-container">
-          <div style={{width: 700}}>
-          <li >{casualInsights}
-          </li>
+          {/* <div style={{width: 700}}> */}
+          
+        <div class="row align-items-center">
+          <div class="col-sm-12 text-center mb-4">
+          {casualInsights}
+            </div>
+            </div>
+            
+          {/* <li >{casualInsights}
+          </li> */}
           <br></br>
-          </div>
+          {/* </div> */}
         </ul>}
-    <label>DeCAT SBT's minted to your account
-    </label> 
-        <ul className="flex-container">{fetched_nftdata && 
+    {/* <label>DeCAT SBT's minted to your account
+    </label>  */}
+        <ul className="flex-container">
+        <div class="row align-items-center">
+          <div class="col-sm-12 text-center mb-4">{fetched_nftdata && 
         nft_data.map((nft, index) => (
         <>
           <div style={{width: 700}}>
@@ -301,13 +310,14 @@ const Portfolio = () => {
           </div>
         </>
         ))}
+        </div></div>
         </ul>
       
     </div> 
 
     <div>
-     <label>DeCAT SBT's shared to your account
-      </label> 
+     {/* <label>DeCAT SBT's shared to your account
+      </label>  */}
         <ul className="flex-container">{fetched_nftdata && 
         endorsed_mints.map((nft,index) => (
         <>
@@ -443,7 +453,7 @@ const Portfolio = () => {
 
 
 
-    </div> //home-container
+    </div> //overlay
 
 
     </div> //main
