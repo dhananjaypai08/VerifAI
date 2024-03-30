@@ -15,7 +15,6 @@ import Loginsystem from "./login";
 import Share from "./Share";
 import { useAppContext } from "../AppContext";
 
-
 const Home = (props) => {
   const { state, setState } = useAppContext()
   const { provider, signer, contract, account, authenticated } = state;
