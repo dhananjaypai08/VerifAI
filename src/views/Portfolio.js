@@ -279,8 +279,8 @@ const Portfolio = () => {
           <br></br>
           </div>
         </ul>}
-    <label className='home-button7 button'>DeCAT SBT's minted to your account
-    </label>
+    {/* <label className='home-button7 button'>DeCAT SBT's minted to your account
+    </label> */}
         <ul className="flex-container">{fetched_nftdata && 
         nft_data.map((nft, index) => (
         <>
@@ -298,8 +298,8 @@ const Portfolio = () => {
     </div>
 
     <div className="home-container">
-    <label className='home-button7 button'>DeCAT SBT's shared to your account
-      </label>
+    {/* <label className='home-button7 button'>DeCAT SBT's shared to your account
+      </label> */}
         <ul className="flex-container">{fetched_nftdata && 
         endorsed_mints.map((nft,index) => (
         <>
