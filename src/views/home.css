@@ -43,9 +43,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
   padding: var(--dl-space-space-oneandhalfunits) var(--dl-space-space-twounits);
-  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -264,7 +263,6 @@
   line-height: 98px;
   padding-top: 40px;
   padding-bottom: 20px;
-  
   
 }
 @keyframes cursor {
@@ -2597,7 +2595,6 @@ video {
 
 .title-head{
   
-    color: var(--dl-color-gray-black);
     display: inline-block;
     padding: 0.5rem 1rem;
     font-size: 20px;
