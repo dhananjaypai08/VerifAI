@@ -111,7 +111,7 @@ const ReputationSystem = (props) => {
   };
 
   return (
-    <div className="home-container">
+    <div className="home-container" style={{ backgroundColor: '#282727'}}>
       <Helmet>
         <title>Reputation</title>
         <meta property="og:title" content="Dashboard" />
@@ -209,7 +209,7 @@ const ReputationSystem = (props) => {
       Total SBT's shared by you: {curr_endorsements_given} <br></br>
       Total Reputation Score: {curr_reputation} <br></br>
       </label>}
-      {isConnected && <span className="reputation-txt">Reputation Chart</span>}
+      {isConnected && <span className="reputation-txt">REPUTATION CHART</span>}
       <div className="home-hero">
       {showGraph &&  
         <span className="reputation-txt">Reputation Chart</span>&&
@@ -280,11 +280,7 @@ const ReputationSystem = (props) => {
     </div>
 
       <section className="home-description">
-        <img
-          alt="image"
-          src="/hero-divider-1500w.png"
-          className="home-divider-image"
-        />
+        
       </section>
 
       <footer className="home-footer">

@@ -11,6 +11,8 @@ import { useAppContext } from '../AppContext';
 import Papa from 'papaparse';
 import abi from "../contracts/VerifAI.json";
 import lighthouse from '@lighthouse-web3/sdk';
+import your_video from '../assets/your_video.mp4'
+
 
 const projectId = '2WCbZ8YpmuPxUtM6PzbFOfY5k4B';
 const projectSecretKey = 'c8b676d8bfe769b19d88d8c77a9bd1e2';
@@ -189,7 +191,8 @@ const Multiple = () => {
     return (<div>
 
     <div>
-        <div className="home-container">
+        <div className="home-container" style={{ backgroundColor: '#282727' }}>
+          
           <Helmet>
             <title>VerifAI</title>
             <meta property="og:title" content="Dashboard" />
@@ -267,11 +270,13 @@ const Multiple = () => {
                     Reputation
                   </a>
                 </nav>
-                <div className="home-container2">
+                
+                <div className="home-container2" style={{ backgroundColor: '#282727' }}>
                   <button className="home-login button">Login</button>
                   <button className="button">Register</button>
                 </div>
               </div>
+              
               <div className="home-icon-group">
                 <svg viewBox="0 0 950.8571428571428 1024" className="home-icon04">
                   <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
@@ -300,13 +305,14 @@ const Multiple = () => {
   {authorized !== 1 &&
     
 
-    <form onSubmit={SignIn}>
-      
+    <form onSubmit={SignIn} style={{ backgroundColor: '#282727' }}>
+      <div class='empty-container' style={{ backgroundColor: '#282727', paddingTop: 100 }}>
+      </div>
       <div className='EmptySpace'><label className='title-head' style={{color: "white"}}>Wallet Address   </label>
       <input type="url" id="walletaddress" value={account ? account: ""} disabled style={{width: 300}} className="button"></input>
       <br></br><br></br>
       
-        <label className='title-head' style={{color: "white"}}>Enter Password</label>
+        <label className='title-head' style={{color: "white"}} >Enter Password</label>
       <input type="password" id="password" placeholder="Enter Your Password" style={{width: 300}} className='home-button7 button'></input>
       </div>
       <button type="submit" className='home-button6 button'>Login</button>
@@ -335,14 +341,12 @@ const Multiple = () => {
             </form>
           }
           
-          <section className="home-description">
+          <section className="home-description" style={{ backgroundColor: '#282727' }}>
             <div className='EmptySpace'></div>
             {!isConnected && <h1 className="home-header">Please connect Wallet.</h1>}
-            <img
-              alt="image"
-              src="/hero-divider-1500w.png"
-              className="home-divider-image"
-            />
+            <div class="empty-container"></div>
+            <div className='EmptySpace'></div>
+
             
           </section>
     
