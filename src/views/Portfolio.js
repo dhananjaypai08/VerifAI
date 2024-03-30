@@ -8,7 +8,7 @@ import { Redirect } from 'react-router-dom'
 import abi from "../contracts/VerifAI.json";
 //import './App.css';
 import { ethers } from "ethers";
-
+import your_video from '../assets/your_video.mp4'
 import "./home.css";
 // import { useAppContext } from "../AppContext";
 // import { CovalentClient } from "@covalenthq/client-sdk";
@@ -156,6 +156,10 @@ const Portfolio = () => {
   };
   
   return (
+    <div className="main">
+    <div className="overlay">
+    <video src={your_video} autoPlay loop muted></video>
+
     <div className="home-container">
       <Helmet>
         <title>Portfolio</title>
@@ -241,15 +245,15 @@ const Portfolio = () => {
           </div>
         </div>
       </header>
-      <div className="home-hero">
+      {/* <div className="home-hero">
       <label className='home-button7 button'>Total DeCAT NFT's Minted to your account: {address_mints}<br></br>
       Total DeCAT NFT's Shared to your wallet: {total_endorsed_mints}
       </label>
       </div>
       <label className='home-button7 button'>Total NFT's Received from DeCAT ORG: {address_mints}
-      </label>
+      </label> */}
       
-    <div class="home-container">
+    {/* <div class="home-container">
       {qrcodegenerated && 
       <div className="home-card" style={{width: 700}}>
       <li className="home-paragraph">QRcode generated as verifiable proof
@@ -257,20 +261,22 @@ const Portfolio = () => {
       </li>
       </div>
       }
-    </div>
-    <form onSubmit={getNFT}>
-      <div className="home-container" style={{width: 300}}>
-        <label className='home-links' style={{color: "white"}}>Enter Wallet Address</label>
-         <input type="text" id="walletaddress" style={{width: 300}} className="button" required></input>
-        
-         <button type="submit" className='home-button6 button'>Get NFT</button>
-      </div>
-      {loader && <div><label className='home-links' style={{color: "white"}}>Fetching SBT...</label><div className="loader"></div></div>}
-    </form>
-    
-      <section className="home-hero">
+    </div>*/}
 
-    <div className="home-container">
+     <form onSubmit={getNFT} className="form-container">
+      <input type="text" id="walletaddress" placeholder="Enter Wallet Address" required />
+      <button type="submit">Get NFT</button>
+      {loader && (
+        <div className="loader-container">
+        <label>Fetching SBT...</label>
+        <div className="loader"></div>
+       </div>
+        )}
+      </form>
+
+     {/* <section className="home-hero">
+
+     <div className="home-container">
     {CIflag &&
     <ul className="flex-container">
           <div className="home-card SBT" style={{width: 700}}>
@@ -280,7 +286,7 @@ const Portfolio = () => {
           </div>
         </ul>}
     {/* <label className='home-button7 button'>DeCAT SBT's minted to your account
-    </label> */}
+    </label> 
         <ul className="flex-container">{fetched_nftdata && 
         nft_data.map((nft, index) => (
         <>
@@ -295,11 +301,11 @@ const Portfolio = () => {
         ))}
         </ul>
       
-    </div>
+    </div> 
 
     <div className="home-container">
     {/* <label className='home-button7 button'>DeCAT SBT's shared to your account
-      </label> */}
+      </label> 
         <ul className="flex-container">{fetched_nftdata && 
         endorsed_mints.map((nft,index) => (
         <>
@@ -316,23 +322,23 @@ const Portfolio = () => {
     </div>
 
       </section>
-      <section className="home-description">
+      {/* <section className="home-description">
         <img
           alt="image"
           src="/hero-divider-1500w.png"
           className="home-divider-image"
         />
         
-      </section>
+      </section> */}
+      </div>
       
       <footer className="home-footer">
         <div className="home-main5">
           <div className="home-branding">
             <div className="home-heading10">
-              <h2 className="home-logo2">Character</h2>
+              <h2 className="home-logo2">ZKBuilders</h2>
               <p className="home-caption17">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
+              Empower your professional journey with VerifAI.  Let's build a decentralized future together.
               </p>
             </div>
             <div className="home-socials1">
@@ -429,15 +435,17 @@ const Portfolio = () => {
           </div>
         </div>
         <span className="home-copyright">
-          © 2022 Character. All Rights Reserved.
+          © 2024 VerifAI. All Rights Reserved.
         </span>
       </footer>
-      <div>
-        <Script>
-          
-        </Script>
-      </div>
-    </div>
+    
+
+
+
+    </div> //home-container
+
+
+    </div> //main
   );
 };
 
