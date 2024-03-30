@@ -2750,7 +2750,7 @@ tr:hover {
   background-color: #00238b;
   transform: scale(1.05);
   color: #f2f2f2;
-}style={{paddingTop:100}}
+}
 
 .leaderboard-table td:hover {
   color: rgb(159, 244, 255);
@@ -2826,3 +2826,4 @@ td{
   background-color: #000605;
   color: #ffffff; /* Lighter shade on hover */
 }
+

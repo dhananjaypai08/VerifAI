@@ -227,6 +227,7 @@ async def scanQR():
 @app.post("/getCasualInsights")
 async def getInsights(data: list = Body(...)):
     if not data: return "Add something to your certificates List"
+    print(data)
     response = model.generate_content("Generate text which should be strictly less 100 words limit and Make sure the generated text is in plain string text and should be without any '*' or neither any other such characters for designing. Generate text about casual Granular statistical overview Insights on this data which signifies all the registered patent or grants or trademarks or a piece of content in a particular domain : "+str(data)+". The text should contain this data for eg: x percent proposals in field y(example: 50% proficient in bio technology patents with 2 research paper in AI pre trained model procedure) and the total words of generated words is less than or equal to 100 words.")
     return response.text
 
@@ -249,12 +250,13 @@ async def getJobs():
 @app.get("/getAllJobs")
 async def getAlljobs():
     lst = str(skills)
-    prompt = f"Get the demand in India today for the given list of domains: {lst}. Make sure the generated answer is in the dictionary format where skill is mapped to its integer value indicating the availability such that I can convert the generated data to dictionary easily in python using json.loads function in python to convert the text to dict and without new lines"
+    prompt = f"Get the demand in India today for the given list of domains: {lst}. Make sure the generated answer is in the dictionary format in one single line(of python) where domain is mapped to its integer value indicating the availability such that I can convert the generated data to dictionary easily in python using json.loads function in python to convert the text directly to dictionary in python and without new lines present and all in one single plain string in one line ready to be converted to python dictionary using json.loads."
     response = model.generate_content(prompt)
-    print(response.text, type(response.text))
+    data = response.text.strip('`').strip('\n').strip()
+    print(data, type(data))
     global jobs_available
     try:
-        jobs_available = json.loads(response.text)  # Parse only if valid JSON
+        jobs_available = json.loads(data)  # Parse only if valid JSON
     except json.JSONDecodeError as e:
         print("Error parsing LLM output:", e)
     return jobs_available

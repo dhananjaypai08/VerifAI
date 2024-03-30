@@ -6,10 +6,11 @@ class Node:
         
 class Contract:
     def __init__(self):
-        self.name = "DeCAT"
+        self.name = "VerifAI"
         self.inherits = "ERC721"
-        self.address = "0x8264a7B7d02ab5eF1e57d0ad10110686D79d8d46"
-        self.abi_path = "../src/contracts/Autocrate.json"
+        #self.address = "0x8264a7B7d02ab5eF1e57d0ad10110686D79d8d46"
+        self.address = "0xBFf990A4A3C985ABdB1F7d015Db715fa1d207555"
+        self.abi_path = "../src/contracts/VerifAI.json"
     
 class Google:
     def __init__(self):

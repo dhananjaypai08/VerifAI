@@ -283,12 +283,12 @@ const Home = (props) => {
           </div>
         </header>
 
-        {isConnected && (
+        {/* {isConnected && (
           <div className="home-heading">
             <p className="home-header1">Your Profile:</p>
-            {/* <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
+            <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
         <label className='home-button7 button'>DeCAT SBT's minted to your account
-        </label> */}
+        </label>
             <ul>
               {fetched_nftdata &&
                 nft_data.map((nft, index) => (
@@ -322,7 +322,7 @@ const Home = (props) => {
                 ))}
             </ul>
           </div>
-        )}
+        )} */}
         {verified !== undefined && (
           <ul className="home-cards">
             {verified == true && (

@@ -1,9 +1,16 @@
 ﻿Sr No,address,name,description,domain
-1,0x79509bF515A069efd08aEFc2313B7ae06552630f,Fine Tuned LLM for legal documentation,Fine Tuned LLM for legal documentation using gemini pro model,Patent
-2,0x8756552BF5B1AF9BaCDe7c5BE4e45CE731D65e48,Fine Tuned LLM for legal documentation,Fine Tuned LLM for legal documentation using gemini pro model,Patent
-3,0x79509bF515A069efd08aEFc2313B7ae06552630f,Youtube Shorts,Youtube short of food vlog by AkashShukla,Trademark
-4,0x8756552BF5B1AF9BaCDe7c5BE4e45CE731D65e48,Youtube Shorts,Youtube short of food vlog by Dilsefoodie,Trademark
-5,0xeFE06D73C547836fB79b95b3F889634319559fEb,ETHIndia23 Grants,Received ethindia grants for defi project built at ethindia,Grants
-6,0x79509bF515A069efd08aEFc2313B7ae06552630f,ETHIndia23 Grants,Received ethindia grants for gamefi project built at ethindia,Grants
-7,0x8756552BF5B1AF9BaCDe7c5BE4e45CE731D65e48,Identity reputation score,Identity reputation score,Research Paper
-8,0x79509bF515A069efd08aEFc2313B7ae06552630f,Identity reputation score,Identity reputation score,Research Journal
+1,0x79509bF515A069efd08aEFc2313B7ae06552630f,Fine Tuned AI  LLM for legal documentation,Fine Tuned LLM for legal documentation using gemini pro model,Patent
+2,0x8756552BF5B1AF9BaCDe7c5BE4e45CE731D65e48,Fine Tuned AI LLM for legal documentation,Fine Tuned LLM for legal documentation using gemini pro model,Patent
+3,0xFFc206f3779CdeBc242220Af294c336a00AD4C5C,Youtube Shorts for sustainable development,Youtube short of food vlog by AkashShukla,Trademark
+4,0x8756552BF5B1AF9BaCDe7c5BE4e45CE731D65e48,Youtube Shorts for AR/VR,Youtube short of food vlog by Dilsefoodie,Trademark
+5,0xFFc206f3779CdeBc242220Af294c336a00AD4C5C,ETHIndia23 Grants on Blockchain,Received ethindia grants for defi project built at ethindia,Grants
+6,0x79509bF515A069efd08aEFc2313B7ae06552630f,ETHIndia23 Grants on Blockchain,Received ethindia grants for gamefi project built at ethindia,Grants
+7,0x8756552BF5B1AF9BaCDe7c5BE4e45CE731D65e48,Identity reputation score on finance,Identity reputation score,Research Paper
+8,0xFFc206f3779CdeBc242220Af294c336a00AD4C5C,Identity reputation score on finance,Identity reputation score,Research Journal
+9,0x79509bF515A069efd08aEFc2313B7ae06552630f,Journal published on sustainable development,Journal published on 23/12/2023,Research Journal
+10,0xFFc206f3779CdeBc242220Af294c336a00AD4C5C,Journal published on sustainable development,Journal published to UGC on 23/11/2022,Research Journal
+11,0x8756552BF5B1AF9BaCDe7c5BE4e45CE731D65e48,Research Paper on Blockchain,Public Research paper to IEEE on 20/02/2023,Research Paper
+12,0xFFc206f3779CdeBc242220Af294c336a00AD4C5C,Research Paper on Blockchain,Public Research paper to IEEE on 20/02/2023,Research Paper
+13,0x79509bF515A069efd08aEFc2313B7ae06552630f,Blog post in colab with wikipedia for finance,Blog post on wikipedia for finance,Trademark
+14,0xFFc206f3779CdeBc242220Af294c336a00AD4C5C,AR/VR white paper,White paper published to BEP on 21/02/2024,Research Paper
+15,0x79509bF515A069efd08aEFc2313B7ae06552630f,AR/VR white paper,White paper published to BEP on 21/02/2024,Research Paper

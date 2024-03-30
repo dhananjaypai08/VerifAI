@@ -122,9 +122,9 @@ const JobsAvailable = (props) => {
   };
 
   return (
-    <div className="home-container">
+    <div className="home-container" style={{ backgroundColor: '#282727'}}>
       <Helmet>
-        <title>Job Demand Index</title>
+        <title>Demand Index</title>
         <meta property="og:title" content="Dashboard" />
       </Helmet>
       <header data-thq="thq-navbar" className="home-navbar">
@@ -152,7 +152,7 @@ const JobsAvailable = (props) => {
               Reputation
             </a>
             <a href="/jobsavailable" className="home-button2 button-clean button">
-              Jobs Demand Index
+               Demand Index
             </a>
           </nav>
         </div>
@@ -217,7 +217,7 @@ const JobsAvailable = (props) => {
         <h1 className="home-header">Please connect Wallet.</h1>
         </div>}
       </section>
-      {isConnected && <label className='mint-btn button'>Total DeCAT's Volume: {totalmints}
+      {isConnected && <label className='mint-btn button'>Total VerifAI's Volume: {totalmints}
       </label>}
       {/* {isConnected && <label className='home-button7 button'>Total SBT's shared to your Account: {curr_endorsements_received} <br></br>
       Total SBT's shared by you: {curr_endorsements_given} <br></br>
@@ -226,10 +226,10 @@ const JobsAvailable = (props) => {
 
       
 
-      {isConnected && <span className="reputation-txt">Job Demands Index</span>}
+      {isConnected && <span className="reputation-txt">Demands Index</span>}
       <div className="home-hero">
       {showGraph &&  
-        <span className="reputation-txt">Job Opening Index</span>&&
+        <span className="reputation-txt">Opening Index</span>&&
         <Line
       data={{ 
         // Name of the variables on x-axies for each bar 
@@ -273,10 +273,10 @@ const JobsAvailable = (props) => {
     /> }
     </div>
 
-    {isConnected && <span className="reputation-txt">Job Opening Doughnut Chart</span>}
+    {isConnected && <span className="reputation-txt">Opening Doughnut Chart</span>}
     <div className="home-hero">
 
-    {showGraph && <span className="reputation-txt">Job Opening User score- Doughnut Chart</span> &&
+    {showGraph && <span className="reputation-txt">Opening User score- Doughnut Chart</span> &&
     <Doughnut
     data={{
       labels: accounts,
@@ -397,7 +397,7 @@ const JobsAvailable = (props) => {
             <div className="home-heading10">
               <h2 className="home-logo2">ZKBuilders</h2>
               <p className="home-caption17">
-              Empower your professional journey with Decat. Join us in creating a job market where trust is inherent, and your identity is truly yours. Let's build a decentralized future together.
+              Empower your professional journey with VerifAI. Join us in creating a job market where trust is inherent, and your identity is truly yours. Let's build a decentralized future together.
               </p>
             </div>
             <div className="home-socials1">
