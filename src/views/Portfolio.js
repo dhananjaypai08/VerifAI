@@ -276,26 +276,26 @@ const Portfolio = () => {
 
      <section className="home-hero">
 
-     <div className="home-container">
+     <div>
     {CIflag &&
     <ul className="flex-container">
-          <div className="home-card SBT" style={{width: 700}}>
-          <li className="home-paragraph">{casualInsights}
+          <div style={{width: 700}}>
+          <li >{casualInsights}
           </li>
           <br></br>
           </div>
         </ul>}
-    <label className='home-button7 button'>DeCAT SBT's minted to your account
+    <label>DeCAT SBT's minted to your account
     </label> 
         <ul className="flex-container">{fetched_nftdata && 
         nft_data.map((nft, index) => (
         <>
-          <div className="home-card SBT" style={{width: 700}}>
-          <li className="home-paragraph">{nft.name}: <br></br>{nft.description}
-          <img src={nft.image} className="home-image06" ></img>
+          <div style={{width: 700}}>
+          <li>{nft.name}: <br></br>{nft.description}
+          <img src={nft.image} ></img>
           </li>
           <br></br>
-          {<button className='home-button6 button' onClick={() => handleButtonClick(index)}>Generate Proof</button>}
+          {<button onClick={() => handleButtonClick(index)}>Generate Proof</button>}
           </div>
         </>
         ))}
@@ -303,18 +303,18 @@ const Portfolio = () => {
       
     </div> 
 
-    <div className="home-container">
-     <label className='home-button7 button'>DeCAT SBT's shared to your account
+    <div>
+     <label>DeCAT SBT's shared to your account
       </label> 
         <ul className="flex-container">{fetched_nftdata && 
         endorsed_mints.map((nft,index) => (
         <>
-          <div className="home-card SBT" style={{width: 700}}>
-          <li className="home-paragraph">{nft.name}: <br></br>{nft.description}
-          <img src={nft.image} className="home-image06" ></img>
+          <div style={{width: 700}}>
+          <li>{nft.name}: <br></br>{nft.description}
+          <img src={nft.image}></img>
           </li>
           <br></br>
-          {<button className='home-button6 button' onClick={() => handleButtonClick(index)}>Generate Proof</button>}
+          {<button onClick={() => handleButtonClick(index)}>Generate Proof</button>}
           </div>
         </>
         ))}
@@ -322,14 +322,13 @@ const Portfolio = () => {
     </div>
 
       </section>
-       <section className="home-description">
+       {/* <section >
         <img
           alt="image"
           src="/hero-divider-1500w.png"
-          className="home-divider-image"
         />
         
-      </section>
+      </section> */}
       </div>
       
       <footer className="home-footer">
