@@ -203,7 +203,7 @@ const ReputationSystem = (props) => {
         <h1 className="home-header">Please connect Wallet.</h1>
         </div>}
       </section>
-      {isConnected && <label className='mint-btn button'>Total DeCAT's Volume: {totalmints}
+      {isConnected && <label  className='mint-btn button'>Total VerifAI's Volume: {totalmints}
       </label>}
       {isConnected && <label className='home-button7 button'>Total SBT's shared to your Account: {curr_endorsements_received} <br></br>
       Total SBT's shared by you: {curr_endorsements_given} <br></br>
@@ -211,39 +211,45 @@ const ReputationSystem = (props) => {
       </label>}
       {isConnected && <span className="reputation-txt">REPUTATION CHART</span>}
       <div className="home-hero">
-      {showGraph &&  
-        <span className="reputation-txt">Reputation Chart</span>&&
-        <Bar
+  {showGraph &&  
+    <span className="reputation-txt">Reputation Chart</span> &&
+    <Bar
       data={{ 
-        // Name of the variables on x-axies for each bar 
         labels: accounts, 
         datasets: [ 
           { 
             label: "Score", 
-            // Data or value of your each variable 
             data: reputation_score, 
-            // Color of each bar 
             backgroundColor: randomBgcolor, 
-            // Border color of each bar 
             borderColor: 'rgba(0, 0, 0, 1)', 
             borderWidth: 1.5, 
           }, 
         ], 
       }} 
-      // Height of graph 
       height={400} 
       width={2000}
       options={{ 
         maintainAspectRatio: false, 
         scales: { 
-          yAxes: [ 
-            { 
-              ticks: { 
-                // The y-axis value will start from zero 
-                beginAtZero: true, 
-              }, 
+          yAxes: [{ 
+            ticks: { 
+              beginAtZero: true, 
+              fontColor: 'white',
+              fontSize: 30 // Change color of y-axis labels
             }, 
-          ], 
+            gridLines: {
+              color: 'rgba(255, 0, 0, 0.5)' // Change color of y-axis grid lines
+            }
+          }], 
+          xAxes: [{ 
+            ticks: { 
+              color: 'white', // Change color of x-axis labels
+              fontSize: 30
+            },
+            gridLines: {
+              color: 'rgba(0, 0, 255, 0.5)' // Change color of x-axis grid lines
+            }
+          }], 
         }, 
         legend: { 
           labels: { 
@@ -251,11 +257,12 @@ const ReputationSystem = (props) => {
           }, 
         }, 
       }} 
-    /> }
-    </div>
+    /> 
+  }
+</div>
 
     <div className="leaderboard-container">
-      <h2 className="ld-title">LEADERBOARD</h2>
+      <h2 className="ld-title" style={{paddingTop:250}}>LEADERBOARD</h2>
       <table className="leaderboard-table">
       <thead>
       <tr>

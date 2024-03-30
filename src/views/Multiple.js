@@ -297,7 +297,7 @@ const Multiple = () => {
     {authorized == 1 && 
     // <div data-thq="thq-close-menu" className="home-caption01">Wohooo!! You are Logged In
     // </div> && 
-    <div data-thq="thq-close-menu" className="home-caption01">LoggedIn successully
+    <div data-thq="thq-close-menu" className="home-caption01" >LoggedIn successully
     </div>
     }
 

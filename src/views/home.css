@@ -712,6 +712,7 @@ video {
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding-top: 220px;
 }
 .home-heading01 {
   gap: var(--dl-space-space-twounits);
@@ -2474,7 +2475,7 @@ video {
     line-height: 21px;
   }
   .home-button7 {
-    margin-top: 10px;
+    margin-top: 50px;
   }
   .home-footer {
     gap: var(--dl-space-space-oneandhalfunits);
@@ -2637,12 +2638,12 @@ video {
 .mint-btn{
   
     /* color: var(--dl-color-gray-black); */
-    color: #000;
+    color: #030015;
     cursor: pointer;
     display: inline-block;
     
     font-size: 45px;
-    box-shadow: 5px 6px 0px 0px #000000;
+    box-shadow: 5px 6px 0px 0px #034a9c;
     font-style: normal;
     transition: 0.3s;
     font-weight: 700;
@@ -2655,17 +2656,19 @@ video {
     padding-bottom: 20px;
     padding-top: 20px;
     /* background-color: rgb(255, 207, 119); */
-    background-color: #232323;
+    background-color: #9fd2fa;
     margin-top: var(--dl-space-space-oneandhalfunits);
 }
 
 .reputation-txt{
-  color: rgb(255, 207, 119);
+  color: rgb(255, 255, 255);
+  border: white;
   font-size: 48px;
   font-weight: 20px;
   font-style: normal;
   font-weight: 600;
   margin-top: 100px;
+  padding-top: 250px;
 }
 
 .leaderboard-container {
@@ -2676,7 +2679,7 @@ video {
 .ld-title {
   font-size: 45px;
   margin-bottom: 10px;
-  color: #ffc85b;
+  color: #fdfaf5;
   text-align: center;
 
 }
@@ -2744,16 +2747,16 @@ tr{
 }
 
 tr:hover {
-  background-color: #facf41;
+  background-color: #00238b;
   transform: scale(1.05);
   color: #f2f2f2;
-}
+}style={{paddingTop:100}}
 
 .leaderboard-table td:hover {
-  color: black;
+  color: rgb(159, 244, 255);
 }
 .leaderboard-table td.score:hover {
-  color: black;
+  color: rgb(247, 249, 249);
 }
 
 td{
