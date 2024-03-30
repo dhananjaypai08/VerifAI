@@ -253,11 +253,11 @@ const Home = (props) => {
 
       {isConnected && <div className="home-heading">
         <p className="home-header1">
-          Your DeCAT Profile:
+          Your Profile:
         </p>
-        <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
+        {/* <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
         <label className='home-button7 button'>DeCAT SBT's minted to your account
-        </label>
+        </label> */}
         <ul>{fetched_nftdata && 
         nft_data.map((nft, index) => (
         <>
@@ -303,11 +303,11 @@ const Home = (props) => {
         </div>}
       </section>
       <section className="home-container">
-        {/* {isConnected && <div className="home-description">
+           {isConnected && <div className="home-description">
         <p className="caption">
           Your DeCAT Profile:
         </p>
-        <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
+    <label className='home-button7 button'>Total DeCAT Sharings allowed: {endorsementsAllowed}</label>
         <label className='home-button7 button'>DeCAT SBT's minted to your account
         </label>
         <ul>{fetched_nftdata && 
@@ -323,11 +323,11 @@ const Home = (props) => {
           </>
         ))}
         </ul>
-        </div>} */}
+        </div>}
     
     {isConnected && <div className="home1-container">
-      <label className='home-button7 button'>DeCAT SBT's shared to your account
-      </label>
+      {/* <label className='home-button7 button'>DeCAT SBT's shared to your account
+      </label> */}
         <ul>{fetched_nftdata && 
         endorsed_mints.map((nft, index) => (
         <>
