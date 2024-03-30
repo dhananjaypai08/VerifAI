@@ -1792,7 +1792,7 @@ video {
 .home-footer {
   background-color: #03080f;
   width: 100%; /* Set width to 100% of viewport width */
-  padding: 200px var(--dl-space-space-halfunit); 
+  padding: 20px var(--dl-space-space-halfunit); 
   display: flex;
   align-items: flex-start;
   flex-direction: column;

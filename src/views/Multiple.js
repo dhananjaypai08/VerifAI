@@ -224,7 +224,7 @@ const Multiple = () => {
                     Reputation
                   </a>
                   <a href="/jobsavailable" className="home-button2 button-clean button">
-                    Jobs Demnad Index
+                    Demand Index
                   </a>
               </nav>
             </div>
