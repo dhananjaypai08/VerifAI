@@ -103,7 +103,7 @@ const VerifAI = () => {
     <div>
       {authenticated && (
         <div>
-          <div className="home-container">
+          <div className="home-container" style={{ backgroundColor: "#282727" }}>
             <Helmet>
               <title>VerifAI</title>
               <meta property="og:title" content="Dashboard" />
@@ -147,7 +147,7 @@ const VerifAI = () => {
                     href="/jobsavailable"
                     className="home-button2 button-clean button"
                   >
-                    Jobs Demand Index
+                    Demand Index
                   </a>
                 </nav>
               </div>
@@ -186,7 +186,7 @@ const VerifAI = () => {
                   className="home-nav1"
                 >
                   <div className="home-container1">
-                    <span className="home-logo1">DeCAT</span>
+                    <span className="home-logo1">VerifAI</span>
                     <div data-thq="thq-close-menu" className="home-menu-close">
                       <svg viewBox="0 0 1024 1024" className="home-icon02">
                         <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -223,7 +223,7 @@ const VerifAI = () => {
                       href="/jobsavailable"
                       className="home-button2 button-clean button"
                     >
-                      Jobs Demand Index
+                      Demand Index
                     </a>
                   </nav>
                   <div className="home-container2">
@@ -259,79 +259,77 @@ const VerifAI = () => {
                 SBT has been SENT!
               </div>
             )}
-            <form onSubmit={SendSBT}>
-              <label className="home-links" style={{ color: "white" }}>
-                Wallet Address
-              </label>
-              <input
-                type="text"
-                id="walletaddress"
-                style={{ width: 300 }}
-                className="button"
-              ></input>
-              <br></br>
-              <br></br>
-              <label className="home-links" style={{ color: "white" }}>
-                Name of the Certificate Holder
-              </label>
-              <input
-                type="text"
-                id="studentname"
-                style={{ width: 300 }}
-                className="button"
-              ></input>
-              <br></br>
-              <br></br>
-              <label className="home-links" style={{ color: "white" }}>
-                Name your Certificate
-              </label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Enter Name"
-                style={{ width: 300 }}
-                className="button"
-              ></input>
-              <br></br>
-              <br></br>
-              <label className="home-links" style={{ color: "white" }}>
-                Description
-              </label>
-              <input
-                type="text"
-                id="description"
-                placeholder="Enter Description"
-                style={{ width: 300 }}
-                className="button"
-              ></input>
-              <br></br>
-              <br></br>
-              <label className="home-links" style={{ color: "white" }}>
-                Upload Image
-              </label>
-              <input
-                type="file"
-                id="image"
-                className="home-button7 button"
-                onChange={handlePhotoSelect}
-              ></input>
-              <br></br>
-              <br></br>
-              {/* <label className='home-links' style={{color: "white"}}>Upload CSV</label>
-              <input type="file" id="image" className='home-button7 button' onChange={handleCsv}></input> */}
+            <form onSubmit={SendSBT} className="form-container">
+  <div className="form-group">
+    <label className="home-links" style={{ color: "white" }}>
+      Wallet Address
+    </label>
+    <input
+      type="text"
+      id="walletaddress"
+      style={{ width: 300 }}
+      className="button"
+    />
+  </div>
+  <div className="form-group">
+    <label className="home-links" style={{ color: "white" }}>
+      Name of the Certificate Holder
+    </label>
+    <input
+      type="text"
+      id="studentname"
+      style={{ width: 300 }}
+      className="button"
+    />
+  </div>
+  <div className="form-group">
+    <label className="home-links" style={{ color: "white" }}>
+      Name your Certificate
+    </label>
+    <input
+      type="text"
+      id="name"
+      placeholder="Enter Name"
+      style={{ width: 300 }}
+      className="button"
+    />
+  </div>
+  <div className="form-group">
+    <label className="home-links" style={{ color: "white" }}>
+      Description
+    </label>
+    <input
+      type="text"
+      id="description"
+      placeholder="Enter Description"
+      style={{ width: 300 }}
+      className="button"
+    />
+  </div>
+  <div className="form-group">
+    <label className="home-links" style={{ color: "white" }}>
+      Upload Image
+    </label>
+    <input
+      type="file"
+      id="image"
+      className="home-button7 button"
+      onChange={handlePhotoSelect}
+    />
+  </div>
+  <button type="submit" className="home-button6 button">
+    Send SBT
+  </button>
+  {loader && (
+    <div>
+      <label className="home-links" style={{ color: "white" }}>
+        Minting SBT...
+      </label>
+      <div className="loader"></div>
+    </div>
+  )}
+</form>
 
-              <button type="submit" className="home-button6 button">
-                Send SBT
-              </button>
-              {loader && (
-                <div>
-                  <label className="home-links" style={{ color: "white" }}>
-                    Minting SBT...
-                  </label>
-                  <div className="loader"></div>
-                </div>
-              )}
-            </form>
 
             {/* <section className="home-hero">
               <div className="home-heading">
@@ -482,7 +480,7 @@ const VerifAI = () => {
               </div>
             </section>*/}
 
-            <footer className="home-footer">
+            {/* <footer className="home-footer">
               <div className="home-main5">
                 <div className="home-branding">
                   <div className="home-heading10">
@@ -588,9 +586,9 @@ const VerifAI = () => {
               <span className="home-copyright">
                 © 2023 VerifAI. All Rights Reserved.
               </span>
-            </footer>
+            </footer> */}
           </div>
-          );
+          
         </div>
       )}
       {!authenticated && <div>Please authenticate yourself</div>}
