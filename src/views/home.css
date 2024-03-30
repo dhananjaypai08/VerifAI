@@ -1266,10 +1266,11 @@ video {
   line-height: 27px;
 }
 .home-button6 {
-  margin-top: var(--dl-space-space-oneandhalfunits);
+  /* margin-top: var(--dl-space-space-oneandhalfunits); */
   margin-left: 35%;
   padding-left: 8%;
   padding-right: 8%;
+  padding-bottom: 15px;
   color: #000605;
 }
 .home-step1 {
@@ -2573,6 +2574,7 @@ video {
 .loader-container {
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .loader {
@@ -2589,6 +2591,8 @@ video {
 }
 
 .flex-container {
+  color: white;
+  font: 100;
   display: flex;
   flex-wrap: wrap;
   gap: 16px; /* Adjust as needed */

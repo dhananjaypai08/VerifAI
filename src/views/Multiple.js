@@ -189,9 +189,12 @@ const Multiple = () => {
         call()
     }
     return (
-
+      <div className="main">
+      <div className="overlay">
+      <video src={your_video} autoPlay loop muted></video>
+  
      
-        <div className="home-container" style={{ backgroundColor: '#282727' }}>
+        <div className="home-container" > 
           
           <Helmet>
             <title>VerifAI</title>
@@ -309,7 +312,7 @@ const Multiple = () => {
     
 
     <form onSubmit={SignIn} style={{ backgroundColor: '#282727' }}>
-      <div class='empty-container' style={{ backgroundColor: '#282727', paddingTop: 100 }}>
+      <div class='empty-container' style={{ backgroundColor: '#rgb(0, 0, 0, 0.5)', paddingTop: 20 }}>
       </div>
       <div className='EmptySpace'><label className='title-head' style={{color: "white"}}>Wallet Address   </label>
       <input type="url" id="walletaddress" value={account ? account: ""} disabled style={{width: 300}} className="button"></input>
@@ -344,14 +347,15 @@ const Multiple = () => {
             </form>
           }
           
-          <section className="home-description" style={{ backgroundColor: '#282727' }}>
+          <section className="home-container" >
             <div className='EmptySpace'></div>
             {!isConnected && <h1 className="home-header">Please connect Wallet.</h1>}
-            <div class="empty-container"></div>
-            <div className='EmptySpace'></div>
+            {/* <div class="empty-container"></div>
+            <div className='EmptySpace'></div> */}
 
             
           </section>
+          </div>
     
           <footer className="home-footer">
         <div className="home-main5">
@@ -460,6 +464,7 @@ const Multiple = () => {
         </span>
       </footer>
         </div>
+    </div>
     
     )
 }

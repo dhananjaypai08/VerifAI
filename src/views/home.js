@@ -552,8 +552,7 @@ const Home = (props) => {
         <div>
           <Script></Script>
         </div>
-      </div>
-    </div>
+      </div>    </div>
   );
 };
 
