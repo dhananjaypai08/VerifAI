@@ -180,15 +180,18 @@ const Portfolio = () => {
             data-thq="thq-navbar-nav-links"
             data-role="Nav"
             className="home-nav"
-          > <a href="/" className="home-button2 button-clean button">
-          Home
-        </a>
+          > 
             <a href="/multiple" className="home-button2 button-clean button">
               Multiple Transaction
             </a>
-            
+            <a href="/portfolio" className="home-button2 button-clean button">
+              Portfolio
+            </a>
             <a href="/reputation" className="home-button2 button-clean button">
               Reputation
+            </a>
+            <a href="/jobsavailable" className="home-button2 button-clean button">
+              Demand Index
             </a>
           </nav>
         </div>
