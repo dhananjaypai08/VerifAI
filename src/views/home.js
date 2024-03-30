@@ -280,8 +280,8 @@ const Home = (props) => {
           </p>
         </div>}
       </section>
-      <section className="home-description">
-        {isConnected && <div className="home-container">
+      <section className="home-container">
+        {isConnected && <div className="home-description">
         <p className="caption">
           Your DeCAT Profile:
         </p>
@@ -430,7 +430,7 @@ const Home = (props) => {
           </div>
         </div>
         <span className="home-copyright">
-          © 2023 Character. All Rights Reserved.
+          © 2024 VerifAI. All Rights Reserved.
         </span>
       </footer>
       <div>
