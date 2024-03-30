@@ -217,7 +217,7 @@ const Home = (props) => {
                     href="/jobsavailable"
                     className="home-button2 button-clean button"
                   >
-                    Jobs Demand Index
+                    Demand Index
                   </a>
                 </div>
               )}
