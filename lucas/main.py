@@ -55,22 +55,20 @@ cloudinary.config(
 )
 
 skills = [
-    "python",
-    "java",
-    "c++",
-    "git",
-    "javascript",
-    "full stack web development",
-    "ai"
+    "bio technology",
+    "ai",
+    "blockchain",
+    "ar/vr",
+    "sustainable development",
+    "finance",
 ]
 jobs_available = {
-    "python": 100,
-    "java": 75,
-    "c++": 50,
-    "git": 25,
-    "javascript": 40,
-    "full stack web development": 30,
-    "ai": 40
+    "bio technology": 100,
+    "ai": 75,
+    "blockchain": 50,
+    "ar/vr": 25,
+    "sustainable development": 40,
+    "finance": 30
 }
 pattern = "|".join(re.escape(p) for p in skills)
 knowledge_base = defaultdict(list)
@@ -229,7 +227,7 @@ async def scanQR():
 @app.post("/getCasualInsights")
 async def getInsights(data: list = Body(...)):
     if not data: return "Add something to your certificates List"
-    response = model.generate_content("Generate text which should be strictly less 100 words limit and Make sure the generated text is in plain string text and should be without any '*' or neither any other such characters for designing. Generate text about casual Granular statistical overview Insights on this data which signifies all the certificates earned in a particular field : "+str(data)+". The text should contain this data for eg: x percent proficient in y field(example: 50% proficient in python with 2 certificates in python) and the total words of generated words is less than or equal to 100 words.")
+    response = model.generate_content("Generate text which should be strictly less 100 words limit and Make sure the generated text is in plain string text and should be without any '*' or neither any other such characters for designing. Generate text about casual Granular statistical overview Insights on this data which signifies all the registered patent or grants or trademarks or a piece of content in a particular domain : "+str(data)+". The text should contain this data for eg: x percent proposals in field y(example: 50% proficient in bio technology patents with 2 research paper in AI pre trained model procedure) and the total words of generated words is less than or equal to 100 words.")
     return response.text
 
 @app.get("/getJobs")
@@ -251,7 +249,7 @@ async def getJobs():
 @app.get("/getAllJobs")
 async def getAlljobs():
     lst = str(skills)
-    prompt = f"Get jobs available(openings) in India today for the given list of skills: {lst}. Make sure the generated answer is in the dictionary format where skill is mapped to its integer value indicating the availability such that I can convert the generated data to dictionary easily in python using json.loads function in python to convert the text to dict and without new lines"
+    prompt = f"Get the demand in India today for the given list of domains: {lst}. Make sure the generated answer is in the dictionary format where skill is mapped to its integer value indicating the availability such that I can convert the generated data to dictionary easily in python using json.loads function in python to convert the text to dict and without new lines"
     response = model.generate_content(prompt)
     print(response.text, type(response.text))
     global jobs_available

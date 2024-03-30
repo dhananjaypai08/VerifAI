@@ -14,7 +14,7 @@ import "./home.css";
 import Loginsystem from "./login";
 import Share from "./Share";
 import { useAppContext } from "../AppContext";
-
+// import { execute } from "../testdj/.graphclient";
 const Home = (props) => {
   const { state, setState } = useAppContext()
   const { provider, signer, contract, account, authenticated } = state;
