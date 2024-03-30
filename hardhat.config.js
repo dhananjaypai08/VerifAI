@@ -10,6 +10,16 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 module.exports = {
   solidity: "0.8.17",
   networks: {
+    zkEVM: {
+      url: `https://rpc.public.zkevm-test.net`,
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    testnet: {
+      url: 'https://rpc.test.btcs.network',
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      chainId: 1115,
+   },
     scrollSepolia: {
       url: "https://sepolia-rpc.scroll.io/",
       accounts:
