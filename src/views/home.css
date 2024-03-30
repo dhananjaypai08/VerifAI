@@ -383,6 +383,18 @@ video {
   align-items: flex-start;
   flex-direction: column;
 }
+.graphs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.graph-section {
+  width: 30%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+}
+
 .home-paragraph {
   color: #ffffff;
   font-size: 40px;

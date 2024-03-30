@@ -129,7 +129,7 @@ const JobsAvailable = (props) => {
       </Helmet>
       <header data-thq="thq-navbar" className="home-navbar">
         <span className="home-logo"><a  href="/">
-              DeCAT
+              VerifAI
             </a></span>
         <div
           data-thq="thq-navbar-nav"
@@ -383,13 +383,7 @@ const JobsAvailable = (props) => {
     
     
 
-      <section className="home-description">
-        <img
-          alt="image"
-          src="/hero-divider-1500w.png"
-          className="home-divider-image"
-        />
-      </section>
+     
 
       <footer className="home-footer">
         <div className="home-main5">

@@ -100,7 +100,12 @@
   justify-content: center;
   background-color: transparent;
 }
-
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .button-clean {
   border: none;
   padding: 0px;
