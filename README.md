@@ -30,6 +30,17 @@ VerifAI is proposed as an integrated solution with India Stack, a collection of 
 - Implementation of AI algorithms to assess the quality of papers before publishing them as SBTs.
 - Introduction of a like-dislike feature to further refine the reputation scoring module, facilitating community-driven quality assessment.
 
+## Deployments
+
+| Network | Address |
+| --- | --- |
+| Polygon zkEvm | [0x816df2a69bB2D246B1ee5a4F2d1B3EbcB3aF7C85](https://testnet-zkevm.polygonscan.com/address/0x816df2a69bB2D246B1ee5a4F2d1B3EbcB3aF7C85) |
+| Polygon Cardona | [0xB300B7e8D0eDfE8DDBE787d4d7A86E13FCA36BB7](https://cardona-zkevm.polygonscan.com/address/0xB300B7e8D0eDfE8DDBE787d4d7A86E13FCA36BB7) |
+| Sepolia | [0xBFf990A4A3C985ABdB1F7d015Db715fa1d207555](https://sepolia.scrollscan.dev/address/0xBFf990A4A3C985ABdB1F7d015Db715fa1d207555) |
+| Lumio | [0xd1B87E9E3CCB5Eee1374be7a53A2F55398474082](https://explorer.testnet.lumio.io/address/0xd1B87E9E3CCB5Eee1374be7a53A2F55398474082?tab=txs) |
+| Avail | [0x50711d2f7261cc8f3FE453d484350ED0ca2EA53c](https://op-avail-sepolia-explorer.alt.technology/address/0x50711d2f7261cc8f3FE453d484350ED0ca2EA53c) |
+| CoreDAO | [0x6674256E7461518B5Be7F2FB43029132d9385385](https://scan.test.btcs.network/address/0x6674256E7461518B5Be7F2FB43029132d9385385) |
+
 ## Getting Started
 To get started with VerifAI, follow these steps:
 1. Clone the repository: `git clone https://github.com/your_username/verifai.git`
