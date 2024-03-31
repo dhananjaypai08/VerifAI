@@ -36,6 +36,18 @@ To get started with VerifAI, follow these steps:
 2. Install dependencies: `npm install`
 3. Configure the environment settings as per the provided documentation.
 4. Run the application: `npm start`
+5. Running Backend: <br />
+After installing dependencies, follow these steps to run the backend:<br />
+i. Open a new terminal.<br />
+ii. Activate the virtual environment: `env/Scripts/activate`<br />
+iii. Navigate to the backend directory: `cd lucas`<br />
+iv. Run the backend application.<br />
+7. Running AI: <br />
+After installing dependencies, follow these steps to run the AI:<br />
+i. Open a new terminal.<br />
+ii. Navigate to the AI directory.<br />
+iii. Run the main Python script: `python main.py`<br />
+
 
 ## Contributing
 We welcome contributions from the community! If you'd like to contribute to VerifAI, please follow our [Contribution Guidelines](CONTRIBUTING.md).
