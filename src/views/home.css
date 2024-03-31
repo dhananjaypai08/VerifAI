@@ -2865,3 +2865,51 @@ td{
   color: #ffffff; /* Lighter shade on hover */
 }
 
+.home-containerdj {
+  display: flex;
+  justify-content: center;
+}
+
+.home-carddj {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-paragraphdj {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.home-image06dj {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.flex-containerdj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none; /* Remove bullet points */
+}
+
+.nft-itemdj {
+  width: calc(33.33% - 10px); /* Adjust width as needed for 3 items in a row */
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+  .nft-itemdj {
+    width: calc(50% - 10px); /* Adjust width as needed for 2 items in a row on smaller screens */
+  }
+}
+
+

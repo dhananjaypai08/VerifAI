@@ -296,7 +296,7 @@ const Multiple = () => {
               </div>
             </div>
           </header>
-          {isConnected && <div>
+          {/* {isConnected && <div>
     {authorized == 1 && 
     // <div data-thq="thq-close-menu" className="home-caption01">Wohooo!! You are Logged In
     // </div> && 
@@ -314,23 +314,23 @@ const Multiple = () => {
     <form onSubmit={SignIn} style={{ backgroundColor: '#282727' }}>
       <div class='empty-container' style={{ backgroundColor: '#rgb(0, 0, 0, 0.5)', paddingTop: 20 }}>
       </div>
-      <div className='EmptySpace'><label className='title-head' style={{color: "white"}}>Wallet Address   </label>
+      <div className='EmptySpace'><label className='title-head' style={{color: "white"}}>Wallet Address</label>
       <input type="url" id="walletaddress" value={account ? account: ""} disabled style={{width: 300}} className="button"></input>
-      <br></br><br></br>
+      <br></br>
       
         <label className='title-head' style={{color: "white"}} >Enter Password</label>
-      <input type="password" id="password" placeholder="Enter Your Password" style={{width: 300}} className='home-button7 button'></input>
+      <input type="password" id="password" placeholder="Enter Your Password" style={{width: 300}} className='home-button7 button' required></input>
       </div>
       <button type="submit" className='home-button6 button'>Login</button>
    </form>
   }
     
-    </div>}
+    </div>} */}
           {send == 1 && 
           <div data-thq="thq-close-menu" className="home-caption01">SBT has been SENT!
           </div>
           }
-          {authorized == 1 &&
+          {isConnected &&
             <form onSubmit={SendSBT}>
               <label className='home-links' style={{color: "white"}}>Upload CSV file</label>
               <input type="file" id="file" className='home-button7 button' onChange={handleCsvSelect}></input>
@@ -347,14 +347,14 @@ const Multiple = () => {
             </form>
           }
           
-          <section className="home-container" >
+          {/* <section className="home-container" > */}
             <div className='EmptySpace'></div>
             {!isConnected && <h1 className="home-header">Please connect Wallet.</h1>}
             {/* <div class="empty-container"></div>
             <div className='EmptySpace'></div> */}
 
             
-          </section>
+          {/* </section> */}
           </div>
     
           <footer className="home-footer">

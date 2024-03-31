@@ -258,15 +258,15 @@ const Portfolio = () => {
       <label className='home-button7 button'>Total NFT's Received from DeCAT ORG: {address_mints}
       </label> */}
       
-    {/* <div class="home-container">
+    <div class="home-containerdj">
       {qrcodegenerated && 
-      <div className="home-card" style={{width: 700}}>
-      <li className="home-paragraph">QRcode generated as verifiable proof
-      <img src={qrcode} className="home-image06" ></img>
+      <div className="home-carddj" style={{width: 400}}>
+      <li className="home-paragraphdj">QRcode generated as verifiable proof
+      <img src={qrcode} className="home-image06dj" ></img>
       </li>
       </div>
       }
-    </div>*/}
+    </div>
 
      <form onSubmit={getNFT} className="form-container">
       <input type="text" id="walletaddress" placeholder="Enter Wallet Address" required />
@@ -279,44 +279,39 @@ const Portfolio = () => {
         )}
       </form>
 
-     <section className="home-hero">
+     <section className="home-hero" style={{ backgroundColor: 'black' }}>
 
-     <div>
-    {CIflag &&
+     <div style={{ backgroundColor: '#282727', borderRadius: 5 }}>
+  {CIflag && (
     <ul className="flex-container">
-          {/* <div style={{width: 700}}> */}
-          
-        <div class="row align-items-center">
-          <div class="col-sm-12 text-center mb-4">
+      <div class="row align-items-center">
+        <div class="col-sm-12 text-center mb-4">
           {casualInsights}
-            </div>
-            </div>
-            
-          {/* <li >{casualInsights}
-          </li> */}
-          <br></br>
-          {/* </div> */}
-        </ul>}
-    {/* <label>DeCAT SBT's minted to your account
-    </label>  */}
-        <ul className="flex-container">
-        <div class="row align-items-center">
-          <div class="col-sm-12 text-center mb-4">{fetched_nftdata && 
-        nft_data.map((nft, index) => (
-        <>
-          <div style={{width: 700}}>
-          <li>{nft.name}: <br></br>{nft.description}
-          <img src={nft.image} ></img>
-          </li>
-          <br></br>
-          {<button onClick={() => handleButtonClick(index)}>Generate Proof</button>}
-          </div>
-        </>
-        ))}
-        </div></div>
-        </ul>
-      
-    </div> 
+        </div>
+      </div>
+      <br></br>
+    </ul>
+  )}
+  </div>
+  
+  <div className="home-containerdj" style={{ backgroundColor: '#282727', color: "white" }}>
+  <ul className="flex-containerdj">
+    {fetched_nftdata &&
+      nft_data.map((nft, index) => (
+        <li key={index} className="nft-itemdj">
+          <h3>{nft.name}</h3>
+          <p>{nft.description}</p>
+          <img src={nft.image} alt={nft.name} /><br></br>
+          <button onClick={() => handleButtonClick(index)} style={{backgroundColor: "white", color: "black", borderRadius: 5}}>
+            Generate Proof
+          </button>
+        </li>
+      ))}
+  </ul>
+</div>
+
+
+
 
     <div>
      {/* <label>DeCAT SBT's shared to your account
@@ -346,7 +341,7 @@ const Portfolio = () => {
       </section> */}
       </div>
       
-      <footer className="home-footer">
+      {/* <footer className="home-footer">
         <div className="home-main5">
           <div className="home-branding">
             <div className="home-heading10">
@@ -451,7 +446,7 @@ const Portfolio = () => {
         <span className="home-copyright">
           © 2024 VerifAI. All Rights Reserved.
         </span>
-      </footer>
+      </footer> */}
     
 
 
